@@ -1,0 +1,305 @@
+
+/* ****************** Fonts ******************* */
+
+/* Headings */
+/* font-family: 'Fraunces', serif; */
+
+/* Text */
+/* font-family: 'Didact Gothic', sans-serif; */
+
+
+/* ****************** Colors ******************* */
+
+/* Color Theme Swatches in Hex
+.Great-Escape_Colors2-1-hex { color: #B8BEC2; }
+.Great-Escape_Colors2-2-hex { color: #12316E; }
+.Great-Escape_Colors2-3-hex { color: #01060F; }
+.Great-Escape_Colors2-4-hex { color: #FFBD2E; }
+.Great-Escape_Colors2-5-hex { color: #644A12; }
+
+/* Color Theme Swatches in Hex */
+/* .Great-Escape_Colors1-1-hex { color: #071F4D; }
+.Great-Escape_Colors1-2-hex { color: #634709; }
+.Great-Escape_Colors1-3-hex { color: #C29025; }
+.Great-Escape_Colors1-4-hex { color: #FFE4AA; }
+.Great-Escape_Colors1-5-hex { color: #D8D8D8; } */
+
+
+/* ********** Universal ********** */
+
+html {
+    background: linear-gradient(#01060f, #12316e);
+    /* height: 100%; */
+}
+
+p {
+    line-height: 2;
+}
+
+/* ********** Header ********** */
+
+nav {
+    background-color: #FFE4AA;
+    height: 80px;
+    position: relative;
+    top: 85px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    position: relative;
+    top: -80px;
+    margin-inline-end: 10%;
+}
+
+li a, li { 
+    text-decoration: none;
+    color: #644A12;
+}
+
+.nav_links {
+    position: relative;
+    top: -178px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ********** Home Page ********** */
+ 
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    color:#C29025;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.home_text {
+    color: #FFE4AA;
+    font-family: 'Didact Gothic', sans-serif;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.crossed_keys {
+    position: relative;
+    left: 1200px;
+    top:-300px;
+    width: 30%;
+}
+
+/* ********** Adventures Page ********** */
+
+#adventures_h1 {
+    font-family: 'Fraunces', serif;
+    color:#C29025;
+    font-size: 5rem;
+    position: relative;
+    top: 150px;
+    text-align: center;
+
+}
+
+#adventures_list {
+    position: relative;
+    left: 250px;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+.adventures {
+    margin-bottom: 2%;
+    margin-left: 0;
+    background-size: 360 700;
+    text-align: center;
+    width: 400px;
+}
+
+.adventure_img {
+    border: 15px solid #FFE4AA;
+    border-radius: 10px;
+    box-shadow:#01060f 5px 15px 15px;
+    
+}
+
+#adventures_list li {
+    list-style: none;
+}
+
+.img_title, .img_description {
+    color:#FFE4AA;
+}
+
+.img_title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFE4AA;
+    position: relative;
+    top: -70px;
+}
+
+.img_description {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+figcaption {
+    color:#FFE4AA;
+    text-align: center;
+}
+
+/* ********** FAQs Page ********** */
+
+#faqs_main {
+    margin-top: 1%;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.faqs_h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    color:#C29025;
+    margin-top: 17%;
+    text-align: center;
+}
+
+.faqs_h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color:#C29025;
+    text-align: center;
+}
+
+.faqs_h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    color:#C29025;
+}
+
+.faqs_p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.2rem;
+    color:#FFE4AA;
+}
+
+p {
+    margin-bottom: 5%;
+}
+
+/* ********** Book Now Page ********** */
+
+form {
+    width: 50%;
+    margin: auto auto;
+    border:#C29025 solid 3px;
+    padding: 2%;
+    text-align: center;
+}
+
+input, label, select {
+    margin: 2%;
+}
+
+input, textarea, option, select {
+    background-color:#B8BEC2;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    color:#01060F
+}
+
+fieldset {
+    margin-bottom: 5%;
+}
+
+#text_area_label {
+    margin-top: 5%;
+}
+
+#questions {
+    width: 90%;
+    height: 40%;
+}
+
+.product_items {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_h2 {
+    color:#C29025;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    margin-top: 10%;
+}
+
+label, legend {
+    font-family: 'Fraunces', serif;
+    color:#C29025;
+    font-weight: bold;
+}
+
+#submit, #reset {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+}
+
+#submit {
+    background-color:#FFE4AA;
+    color:#644A12;
+}
+
+#reset {
+    background-color: #D8D8D8;
+    color:#01060f;
+}
+
+/* ********** Footer ********** */
+
+footer {
+    height: 100px;
+}
+
+footer ul li {
+    text-decoration: none;
+    display: inline;
+    margin: 0.5%;
+    font-family: 'Didact Gothic', sans-serif;
+    width: 20%;
+}
+
+footer ul {
+    z-index: 5;
+    position: relative;
+    left: 77%;
+    width: 20%;
+}
+
+.adventure_footer_text {
+    position: relative;
+    bottom: -150px;
+}
+
+.faqs_footer_text {
+    position: relative;
+    bottom: -150px;
+}
+
+.home_footer_text {
+    position: relative;
+    bottom: -150px;
+}

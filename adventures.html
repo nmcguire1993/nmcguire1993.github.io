@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fraunces:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Great Escape Adventures</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav section with links to other pages and graphic of the logo in the center -->
+      <nav>
+        <ul>
+          <li class="nav_links"><a href="index.html">Home</a></li>
+          <li class="nav_links"><a href="adventures.html">Adventures</a></li>
+          <li>
+            <!-- the logo appears in the center of the nav bar and bisects the navigation links -->
+            <a href="index.html"
+              ><img
+                src="Images/Great_Escape_Logo_Web2.png"
+                alt="safe door logo that also looks like a puzzle with 'Great Escape, Killeen' and 'www.greatescapekilleen.com' written on it"
+                width="230"
+                height="232"
+            /></a>
+          </li>
+          <li class="nav_links"><a href="faqs.html">FAQs</a></li>
+          <li class="nav_links"><a href="book_now.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section includes several images with the corresponding rooms on them and some information about pricing and room -->
+    <main>
+      <!-- heading 1 that invites the user to choose the game they want to play -->
+      <h1 id="adventures_h1">Choose Your Adventure!</h1>
+      <!-- adventures_list is a list of game images and text to give the user the ability to choose which games they would like to know more about -->
+      <ul id="adventures_list">
+        <li class="adventures">
+          <!-- each image is also a link to what would be a whole page dedicated to the game in question if the site was entirely built out -->
+          <a href="#">
+            <figure>
+              <img
+                class="adventure_img"
+                src="Images/01_Anubis_1.jpg"
+                alt="Picture of the Anubis Room at the Great Escape escape room"
+                width="350"
+                height="257"
+              />
+              <figcaption class="img_description">
+                Up to 8 Players<br />Difficulty 8/10
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="adventures">
+          <a href="#">
+            <figure>
+              <!-- the class adventure_img gives the CSS a target to include all the images on the adventure page -->
+              <img
+                class="adventure_img"
+                src="Images/02_Back_4th_3.jpg"
+                alt="Image of the Back the 4th room logo"
+                width="350"
+                height="271"
+              />
+              <!-- figcaptions include information about the room being designated -->
+              <figcaption class="img_description">
+                Up to 8 Players<br />Difficulty 6/10
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="adventures">
+          <a href="#">
+            <!-- figure is used to include the adventure image and the text for the image -->
+            <figure>
+              <img
+                class="adventure_img"
+                src="Images/03_Mobfather_1.jpg"
+                alt="Image of the Mobfather room logo"
+                width="350"
+                height="407"
+              />
+              <figcaption class="img_description">
+                Up to 9 Players<br />Difficulty 9/10
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <!-- the class "adventures" allows the CSS to target all the list items in the adventures page -->
+        <li class="adventures">
+          <a href="#">
+            <figure>
+              <img
+                class="adventure_img"
+                src="Images/Imperial_3.jpg"
+                alt="Picture of the Imperial Heist room at the Great Escape escape room"
+                width="350"
+                height="453"
+              />
+              <figcaption class="img_description">
+                Up to 4 Players<br />Difficulty 6/10
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="adventures">
+          <a href="#">
+            <figure>
+              <img
+                class="adventure_img"
+                src="Images/05_Cellar_1.jpg"
+                alt="Image of The Cellar room logo"
+                width="350"
+                height="500"
+              />
+              <figcaption class="img_description">
+                2 to 6 Players<br />Difficulty 8/10<br />***Players Aged 13 and
+                Up***
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="adventures">
+          <a href="#">
+            <figure>
+              <img
+                class="adventure_img"
+                src="Images/06_WTF_1.jpg"
+                alt="Image of the WTF room logo"
+                width="350"
+                height="233"
+              />
+              <figcaption class="img_description">
+                2 Players<br />Difficulty 5/10<br />Rated R<br />Strong Sexual
+                Content
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <!-- the footer includes the desert background graphic as well as the copyright information, the designer's name, and a contact us and careers page -->
+    <footer>
+      <ul>
+        <li class="adventure_footer_text">Copyright Nick McGuire 2023</li>
+        <li class="home_footer_text"><a href="book_now.html">Contact Us</a></li>
+        <li class="adventure_footer_text"><a href="">Careers</a></li>
+      </ul>
+      <img
+        id="adventures_footer_graphic"
+        src="Images/Great_Escape_Desert_Footer_Web2.png"
+        alt="The Great Escape logo, a puzzle board in the shape of the door of a safe with 'The Great Escape, Killeen, TX' written on it"
+      />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fraunces:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Great Escape</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="nav_links"><a href="index.html">Home</a></li>
+          <li class="nav_links"><a href="adventures.html">Adventures</a></li>
+          <li>
+            <a href="index.html"
+              ><img src="Images/Great_Escape_Logo_Web2.png"
+                    alt="safe door logo that also looks like a puzzle with 'Great Escape, Killeen' and 'www.greatescapekilleen.com' written on it"
+            /></a>
+          </li>
+          <li class="nav_links"><a href="faqs.html">FAQs</a></li>
+          <li class="nav_links"><a href="book_now.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="contact_h2">Contact Us!</h2>
+      <form action="submit_html" method="get">
+        <!-- First two inputs are for first name and last name -->
+        <label for="first_name">First Name</label>
+        <input
+          id="first_name"
+          name="first_name"
+          type="text"
+          placeholder="Indiana"
+        />
+        <label for="last_name">Last Name</label>
+        <input
+          id="last_name"
+          name="last_name"
+          type="text"
+          placeholder="Jones"
+        />
+        <!-- The radio buttons ask the user if they would prefer to code or design. They are placed in a fieldset for greater readability. -->
+        <fieldset class="radio">
+          <legend>Is This A Gift?</legend>
+          <label for="code">Yes</label>
+          <input id="code" name="radiobutton" type="radio" value="code" />
+          <label for="design">No</label>
+          <input id="design" name="radiobutton" type="radio" value="design" />
+        </fieldset>
+        <!-- The checkboxes ask the user to select which courses they are interested in taking. They are placed in a fieldset for greater readability. -->
+        <fieldset class="checkbox">
+          <legend class="products">Adventures</legend>
+          <label class="product_items" for="anubis"
+            >The Lost Tomb Of Anubis</label
+          >
+          <input
+            class="product_items"
+            id="anubis"
+            name="checkbox"
+            type="checkbox"
+            value="100"
+          />
+          <label class="product_items" for="back_to_the_fourth"
+            >Back To The Fourth Grade</label
+          >
+          <input
+            class="product_items"
+            id="back_to_the_fourth"
+            name="checkbox"
+            type="checkbox"
+            value="150"
+          />
+          <label class="product_items" for="mobfather">The Mobfather</label>
+          <input
+            class="product_items"
+            id="mobfather"
+            name="checkbox"
+            type="checkbox"
+            value="200"
+          />
+          <label class="product_items" for="imperial_heist"
+            >Imperial Heist</label
+          >
+          <input
+            class="product_items"
+            id="imperial_heist"
+            name="checkbox"
+            type="checkbox"
+            value="200"
+          />
+          <label class="product_items" for="the_cellar">The Cellar</label>
+          <input
+            class="product_items"
+            id="the_cellar"
+            name="checkbox"
+            type="checkbox"
+            value="200"
+          />
+          <label class="product_items" for="wtf"
+            >What The F#@! Happened Last Night</label
+          >
+          <input
+            class="product_items"
+            id="wtf"
+            name="checkbox"
+            type="checkbox"
+            value="200"
+          />
+        </fieldset>
+        <!-- The selectbox asks the user which method of payment they would prefer -->
+        <label for="payment">How Would You Like To Pay?</label>
+        <select id="payment" name="payment">
+          <option>Card</option>
+          <option>ACH Transfer</option>
+        </select>
+        <!-- The text area lets the user add any comments or questions the may have -->
+        <label id="text_area_label" for="questions"
+          >Any Special Requests?</label
+        >
+        <textarea
+          id="questions"
+          name="textarea"
+          type="tel"
+          rows="10"
+        ></textarea>
+        <!-- The buttons are used to submit the form or reset the form -->
+        <button id="submit" type="submit">Submit</button>
+        <button id="reset" type="reset">Reset</button>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li class="home_footer_text">Copyright Nick McGuire 2023</li>
+        <li class="home_footer_text"><a href="book_now.html">Contact Us</a></li>
+        <li class="home_footer_text"><a href="">Careers</a></li>
+      </ul>
+      <img
+        class="home_footer_graphic"
+        src="Images/Great_Escape_Desert_Footer_Web2.png"
+        alt="The Great Escape logo, a puzzle board in the shape of the door of a safe with 'The Great Escape, Killeen, TX' written on it"
+      />
+    </footer>
+  </body>
+</html>
