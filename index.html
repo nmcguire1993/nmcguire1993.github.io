@@ -1,68 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fraunces:ital,wght@1,200&display=swap"
-      rel="stylesheet"
-    />
-    <title>The Great Escape</title>
-  </head>
-  <body>
-    <!-- header includes main navigation and the logo -->
-    <header>
-      <nav>
-        <ul>
-          <li class="nav_links"><a href="index.html">Home</a></li>
-          <li class="nav_links"><a href="adventures.html">Adventures</a></li>
-          <li>
-            <a href="index.html"
-              ><img src="Images/Great_Escape_Logo_Web2.png"
-                    alt="safe door logo that also looks like a puzzle with 'Great Escape, Killeen' and 'www.greatescapekilleen.com' written on it"
-            /></a>
-          </li>
-          <li class="nav_links"><a href="faqs.html">FAQs</a></li>
-          <li class="nav_links"><a href="book_now.html">Book Now</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- main includes text to introduce the escape room as well as a graphic with two keys crossed together -->
-    <main>
-      <!-- The home_text class allows the CSS to target the main text on the home page -->
-      <div class="home_text">
-        <h2>An Escape Like No Other!</h2>
-        <p>
-          The Great Escape in Killeen, TX welcomes you to begin an adventure<br />that
-          you will remember for the rest of your life!
-        </p>
-        <p>
-          See if you can find the hidden treasure<br />on one of the pages of
-          our website! (The keys would be too easy!)
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick McGuire - Technical Writer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fc;
+      color: #333;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    header img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    h1 {
+      color: #3b82f6;
+    }
+    nav {
+      text-align: right;
+      margin-left: auto;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #555;
+    }
+    section {
+      margin: 2rem 0;
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #3b82f6;
+      margin-bottom: 1rem;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #111827;
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+    }
+    .card a {
+      color: #3b82f6;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+    .experience, .skills {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .experience h4, .skills h4 {
+      font-size: 1rem;
+      color: #111827;
+      margin-bottom: 0.25rem;
+    }
+    .experience small {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #6b7280;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .skill {
+      background: #f3f4f6;
+      padding: 0.75rem;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    .contact-btn {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/80" alt="Nick McGuire" />
+    <div>
+      <h1>Nick McGuire</h1>
+      <p>Technical Writer based in Plano, TX</p>
+      <p>I specialize in translating complex HVAC and technical concepts into clear, user-friendly content. With a strong foundation in UX design, front-end development, and technical writing, I create effective documentation that supports product understanding and user success.</p>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Experience</a>
+      <a href="#">Skills</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="section-title">💼 Major Work</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Installation Manual</h3>
+        <p>Created detailed step-by-step manuals for HVAC products, improving technician efficiency and reducing support calls.</p>
+        <a href="#">View Sample</a>
       </div>
-      <!-- The crossed_keys class enables the CSS to target the graphic of the crossed keys on the home page -->
-      <div class="crossed_keys">
-        <img
-          src="Images/Great_Escape_Crossed_Keys_Web copy.png"
-          alt="a graphic of two keys crossed together at a 45 degree angle"
-        />
+      <div class="card">
+        <h3>Product Specification Sheets</h3>
+        <p>Developed concise, accurate spec sheets for sales teams and distributors to reference key product data quickly.</p>
+        <a href="#">View Sample</a>
       </div>
-    </main>
-    <!-- footer includes copyright information, the designer's name, date, and links to the contact us page and a careers page -->
-    <footer>
-      <ul>
-        <li class="home_footer_text">Copyright Nick McGuire 2023</li>
-        <li class="home_footer_text"><a href="book_now.html">Contact Us</a></li>
-        <li class="home_footer_text"><a href="">Careers</a></li>
-      </ul>
-      <img
-        class="home_footer_graphic"
-        src="Images/Great_Escape_Desert_Footer_Web2.png"
-        alt="The Great Escape logo, a puzzle board in the shape of the door of a safe with 'The Great Escape, Killeen, TX' written on it"
-      />
-      <!-- The alt attribute above gives an alternate description of the graphic when the graphic does not load -->
-    </footer>
-  </body>
+      <div class="card" style="grid-column: span 2;">
+        <h3>UX Design Prototypes</h3>
+        <p>Designed Figma wireframes and interactive prototypes for HVAC software tools and customer-facing portals.</p>
+        <a href="#">View Sample</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">💼 Experience</h2>
+    <div class="experience">
+      <h4>Technical Writer</h4>
+      <small>2022 – Present | HVAC Manufacturer</small>
+      <p>Write, edit, and format manuals, spec sheets, and engineering documentation. Coordinate with product and engineering teams to ensure clarity and accuracy.</p>
+    </div>
+    <div class="experience">
+      <h4>UX Design Student</h4>
+      <small>2021 – 2022 | Freelance</small>
+      <p>Designed web and mobile interfaces, conducted user research, and created wireframes and prototypes for local clients in the service and retail industries.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">🔋 Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Technical Writing</div>
+      <div class="skill">UX Design & Research</div>
+      <div class="skill">Figma & Prototyping</div>
+      <div class="skill">HTML/CSS/JavaScript</div>
+      <div class="skill">Adobe Creative Suite</div>
+      <div class="skill">Markdown & Docs-as-Code</div>
+      <div class="skill">Microsoft Office Suite</div>
+      <div class="skill">Editing & Proofreading</div>
+    </div>
+  </section>
+
+  <section style="text-align:center">
+    <p>Let's work together!</p>
+    <a class="contact-btn" href="#">Contact Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Nick McGuire – Technical Writer Portfolio
+  </footer>
+</body>
 </html>
